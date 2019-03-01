@@ -1,0 +1,23 @@
+<assembly>
+<id>bin</id>
+<formats>
+  <format>zip</format>
+</formats>
+<fileSets>
+  <fileSet>
+    <directory>src/sql</directory>
+    <outputDirectory>sql</outputDirectory>
+    <includes>
+      <include>**/*.sql</include>
+    </includes>
+    <lineEnding>unix</lineEnding>
+  </fileSet>
+</fileSets>
+<!--<files>
+<file>
+<source>target/${artifactId}_${version}.${packaging}</source>
+<outputDirectory>/</outputDirectory>
+<destName>${artifactId}_flyway_${pom.version}</destName>
+</file>
+</files>-->
+</assembly>
